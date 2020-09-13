@@ -1,80 +1,80 @@
 <?php
 
-class Hewan {
-	public $jumlah_kaki, $bisa_terbang, $suara;
+class motor {
+	public $jumlah_cc, $merek_motor, $kenalpot;
 }
 	
-	function bersuara(){
-		return "Miaww";
+	function model_kenalpot(){
+		return "racing";
 }
 
-class Kucing extends Hewan {
-	function bersuara(){
-		return "Meooong";
+class ninja extends motor {
+	function model_kenalpot(){
+		return "racing";
 	}
 }
 
-class Anjing extends Hewan {
-	function bersuara(){
-		return "Guk Guk";
+class ktm_duke extends motor {
+	function model_kenalpot(){
+		return "sstandar";
 	}
 }
 
-class Elang extends Hewan {
-	function bersuara(){
-		return "Miiiip";
+class harley_davidson extends motor {
+	function model_kenalpot(){
+		return "standar";
 	}
 }
 
-class Angsa extends Hewan {
-	function bersuara(){
-		return "Kwaaak";
+class ducati extends motor {
+	function model_kenalpot(){
+		return "racing";
 	}
 }
 
-$momo = new Kucing;
-$momo->jumlah_kaki = 4;
-echo "Momo Adalah Kucing <br>";
-echo "Punya Kaki Sebanyak : ".$momo->jumlah_kaki."<br>";
-     $momo->bisa_terbang = "Tidak Bisa Terbang";
-echo $momo->bisa_terbang."<br>";
-     $momo->suara = "Meooong";
-echo "Suaranya : ".$momo->bersuara()."<br>";
+$ninja = new ninja;
+$ninja->jumlah_cc = 1000;
+echo "ninja Adalah motor keluaran yamaha <br>";
+echo "mempunyai besar cc dari 150 s/d 1000cc : ".$ninja->jumlah_cc."<br>";
+     $ninja->merek_motor = "yamaha";
+echo $ninja->merek_motor."<br>";
+     $ninja->kenalpot = "akraprovic";
+echo "kenalpot : ".$ninja->model_kenalpot()."<br>";
 
 echo "<hr>";
 
 
-$doggo = new Anjing;
-$doggo->jumlah_kaki = 4;
-echo "Doggo Adalah Anjing <br>";
-echo "Punya Kaki Sebanyak : ".$doggo->jumlah_kaki."<br>";
-     $doggo->bisa_terbang = "Tidak Bisa Terbang";
-echo $doggo->bisa_terbang."<br>";
-     $doggo->suara = "Guk Guk";
-echo "Suaranya : ".$doggo->bersuara();
+$ktm_duke = new ktm_duke;
+$ktm_duke->jumlah_cc = 750;
+echo "ktm duke adalah motor naked <br>";
+echo "mempunyai besaran cc hingga 1000 : ".$ktm_duke->jumlah_cc."<br>";
+     $ktm_duke->merek_motor = "ktm";
+echo $ktm_duke->merek_motor."<br>";
+     $ktm_duke->kenalpot = "sc project";
+echo "kenalpot : ".$ninja->model_kenalpot();
 
 echo "<hr>";
 
 
-$zya = new Elang;
-$zya->jumlah_kaki = 2;
-echo "Zya Adalah Elang <br>";
-echo "Punya Kaki Sebanyak : ".$zya->jumlah_kaki."<br>";
-     $zya->bisa_terbang = "Bisa Terbang";
-echo $zya->bisa_terbang."<br>";
-     $zya->suara = "Miiiip";
-echo "Suaranya : ".$zya->bersuara();
+$harley_davidson = new harley_davidson;
+$zya->jumlah_cc = 2000;
+echo "harley_davidson adalah motor yang mempunyai cc yang sangat besar <br>";
+echo "mempunyai cc hingga 10000 : ".$harley_davidson->jumlah_kaki."<br>";
+     $harley_davidson->merek_motor = "harley";
+echo $harley_davidson->merek_motor."<br>";
+     $harley_davidson->kenalpot = "no merk";
+echo "kenalpot : ".$zya->model_kenalpot();
 
 echo "<hr>";
 
 
-$masha = new Angsa;
-$masha->jumlah_kaki = 2;
-echo "Masha Adalah Angsa <br>";
-echo "Punya Kaki Sebanyak : ".$masha->jumlah_kaki."<br>";
-     $masha->bisa_terbang = "Bisa Terbang";
-echo $masha->bisa_terbang."<br>";
-     $masha->suara = "Kwaaak";
-echo "Suaranya : ".$masha->bersuara();
+$ducati = new ducati;
+$ducati->jumlah_cc = 1000;
+echo "ducati adalah motor eropa <br>";
+echo "mempunyai cc hingga 1000 : ".$ducati->jumlah_cc."<br>";
+     $ducati->merek_motor = "ducati";
+echo $ducati->merek_motor."<br>";
+     $masha->kenalpot = "akraprovic";
+echo "kenlapot : ".$masha->model_kenalpot();
 
 echo "<hr>";
